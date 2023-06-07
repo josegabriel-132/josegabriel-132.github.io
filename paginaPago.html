@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de Pago</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='Style.css'>
+    <style>
+        
+
+#titulo {
+  text-align: center;
+  font-size: 25px;
+  margin: 0%;
+  padding-top: 140px;
+}
+
+form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo (2).jpg" alt="Logo de la Joyería HK">
+            <div class="company-name">
+                HK Los Angeles Joyería
+            </div>
+
+        </div>
+        <nav>
+            <ul><li>
+                    <a href="paginaPrincipal.html">¿Quienes somos?</a>
+                </li>
+                <li class="dropdown">
+                    <a href="https://api.whatsapp.com/send?phone=+5218671636236&text=Hola,%20¿cómo%20estás?" target="_blank">Contactanos</a>
+                </li>
+                
+                <li><a href="promociones.html">Promociones</a></li>
+                <li class="dropdown">
+                    <a href="#" style="padding-right: 40px;">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="paginaSecundaria.html">anillos</a>
+                        <a href="paginaTres.html">collares</a>
+                        <a href="paginaCuatro.html">Relojes</a>
+                        <a href="paginaCinco.html">aretes</a>
+                        <a href="paginaSeis.html">pulseras</a>
+                        <a href="paginaSiete.html">broches</a>
+                        <a href="Todo.html">Todo</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <p id="titulo">Formulario de pago</p>
+    </div>
+        <section style="display: flex; justify-content: center;align-items: center;height: 60vh;font-family: Arial, sans-serif;">
+            <form action="procesar_pago.php" method="POST">
+                <label for="nombre_tarjeta">Nombre en la tarjeta:</label>
+                <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" required><br><br>
+
+                <label for="numero_tarjeta">Número de tarjeta:</label>
+                <input type="number" id="numero_tarjeta" name="numero_tarjeta" required><br><br>
+
+                <label for="fecha_vencimiento">Fecha de vencimiento:</label>
+                <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" placeholder="MM/AA" required><br><br>
+
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" required><br><br>
+                <center><input type="submit" value="Pagar"></center>
+            </form>
+        </section>
+</body>
+
+</html>

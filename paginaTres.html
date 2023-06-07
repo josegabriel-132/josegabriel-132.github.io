@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Style.css'>
+</head>
+<body style="margin:0;">
+    <header>
+        <div class="logo">
+            <img src="logo (2).jpg" alt="Logo de la Joyería HK">
+            <div class="company-name">
+                HK Los Angeles Joyería
+            </div>
+
+        </div>
+        <nav>
+            <ul><li>
+                    <a href="paginaPrincipal.html">¿Quienes somos?</a>
+                </li>
+                <li class="dropdown">
+                    <a href="https://api.whatsapp.com/send?phone=+5218671636236&text=Hola,%20¿cómo%20estás?" target="_blank">Contactanos</a>
+                </li>
+                
+                <li><a href="promociones.html">Promociones</a></li>
+                <li class="dropdown">
+                    <a href="#" style="padding-right: 40px;">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="paginaSecundaria.html">anillos</a>
+                        <a href="paginaTres.html">collares</a>
+                        <a href="paginaCuatro.html">Relojes</a>
+                        <a href="paginaCinco.html">aretes</a>
+                        <a href="paginaSeis.html">pulseras</a>
+                        <a href="paginaSiete.html">broches</a>
+                        <a href="Todo.html">Todo</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Collares</h1>
+    <div class="filter">
+        <label for="price-filter">Ordenar por precio:</label>
+        <select id="price-filter" onchange="filterItems()">
+            <option value="asc">Menor a mayor</option>
+            <option value="desc">Mayor a menor</option>
+        </select>
+    </div>
+    <div id="item-list">
+        <!-- Aquí se generarán los elementos del inventario -->
+    </div>
+
+    <script src="script2.js"></script>
+    <footer>
+        <p>"Descubre el brillo eterno de nuestras joyas, cuidadosamente diseñadas para cautivar y embellecer. Encuentra el regalo perfecto para celebrar momentos inolvidables. <br> ¡Deja que nuestras piezas brillen en tu vida!"</p>
+    </footer>
+</body>
+</html>
